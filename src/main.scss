@@ -1,3 +1,18 @@
+@use "./Components/Header/Header";
+@use "./Components/Landing_page/Landing";
+@use "./Components/Buttons/Button";
+
+@use "./Components/variables" as *;
+
 body {
-	background-color: hotpink;
+	background-color: whitesmoke;
+}
+
+.grid {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	background-color: $black;
+	border: 1px solid $black;
+	gap: 1px;
 }

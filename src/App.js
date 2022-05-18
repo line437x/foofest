@@ -1,5 +1,6 @@
 import "./main.scss";
-import "./App.css";
+import LandingPage from "./Components/Landing_page/Landing";
+
 import { getBands, addMood } from "./Utils/data";
 
 import { useEffect, useState } from "react";
@@ -40,7 +41,11 @@ function App() {
 	// console.log("Schedule ", schedule);
 	// getBands();
 
-	return <div className="App"></div>;
+	return (
+		<div>
+			<LandingPage></LandingPage>
+		</div>
+	);
 }
 
 export default App;

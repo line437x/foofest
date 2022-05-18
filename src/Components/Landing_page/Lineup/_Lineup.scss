@@ -1,0 +1,14 @@
+@use "../../variables" as *;
+
+#lineup_container {
+	display: grid;
+	.lineup {
+		font-family: $display-font;
+		text-align: center;
+		padding-inline: 1rem;
+	}
+	#schedule_btn {
+		margin: 1rem;
+		justify-self: end;
+	}
+}

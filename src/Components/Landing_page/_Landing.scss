@@ -1,0 +1,18 @@
+@use "../variables";
+@use "./Menu/Menu";
+@use "./Lineup/Lineup";
+
+@media (min-width: 700px) {
+	#content {
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		.navigation {
+			grid-row: 1;
+			grid-column: 2;
+		}
+		.lineup {
+			grid-row: 1;
+			grid-column: 1;
+		}
+	}
+}

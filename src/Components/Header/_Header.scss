@@ -1,0 +1,14 @@
+@use "../variables";
+
+.header {
+	// border: 1px solid black;
+	padding-inline: 1.5rem;
+	h1 {
+		font-family: variables.$display-font;
+		font-size: 2.5rem;
+	}
+	p {
+		font-family: variables.$paragraph-font;
+		text-align: end;
+	}
+}
