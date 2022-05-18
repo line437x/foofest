@@ -4,6 +4,10 @@
 
 @use "./Components/variables" as *;
 
+* {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='54' viewport='0 0 100 100' style='fill:black;font-size:27px;'><text y='50%'>🍌</text></svg>") 16 0, auto; /*!emojicursor.app*/
+}
+
 body {
 	background-color: $white;
 }
@@ -15,4 +19,9 @@ body {
 	background-color: $black;
 	border: 1px solid $black;
 	gap: 1px;
+}
+
+.link {
+	text-decoration-line: none;
+	color: $black;
 }
