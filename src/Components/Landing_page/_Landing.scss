@@ -5,7 +5,7 @@
 @media (min-width: 700px) {
 	#content {
 		display: grid;
-		grid-template-columns: 2fr 3fr;
+		grid-template-columns: 2fr 2fr;
 		.navigation {
 			grid-row: 1;
 			grid-column: 2;

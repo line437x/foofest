@@ -5,15 +5,15 @@
 		font-family: $display-font;
 	}
 	li {
-		// height: 4.5rem;
+		height: 4.5rem;
 		list-style: none;
-		background-color: whitesmoke;
+		background-color: $white;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		img {
-			height: auto;
-			width: 30%;
+			height: 70px;
+			width: auto;
 		}
 		p {
 			padding-inline: 1rem;
@@ -23,12 +23,17 @@
 }
 @media (min-width: 700px) {
 	.navigation {
+		height: max-content;
 		ul {
 			// transform-origin: bottom right;
 			// transform: rotate(90deg);
-
-			display: flex;
-			flex-flow: column;
+			display: grid;
+			grid-template-rows: 1;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		li {
+			height: auto;
+			writing-mode: sideways-lr;
 		}
 	}
 }
