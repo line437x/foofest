@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+#banner {
+	border: 1px solid $black;
+	font-family: $display-font;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.marquee {
+	height: auto;
+	width: auto;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee div {
+	display: block;
+	width: 200%;
+
+	position: relative;
+
+	animation: marquee 3s linear infinite;
+}
+.marquee span {
+	float: left;
+	width: 50%;
+	font-size: 2.5rem;
+}
+
+@keyframes marquee {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100%;
+	}
+}
