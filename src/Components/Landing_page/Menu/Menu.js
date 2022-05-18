@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pic1 from "../../../img/place_1.jpg";
 import pic2 from "../../../img/place_2.jpg";
 import pic3 from "../../../img/place_3.jpg";
@@ -8,10 +9,14 @@ export default function Navigation() {
 			<ul className="grid">
 				<li>
 					<img src={pic1} alt="billede" />
-					<p>SCHEDULE</p>
+					<Link className="link" to="/schedule">
+						<p>SCHEDULE</p>
+					</Link>
 				</li>
 				<li>
-					<p>PLAYING NOW</p>
+					<Link className="link" to="/playing">
+						<p>PLAYING NOW</p>
+					</Link>
 				</li>
 				<li>
 					<p>FESTIVAL MAP</p>
