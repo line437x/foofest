@@ -4,6 +4,7 @@
 @use "./Components/Banner/Banner";
 @use "./Components/Schedule/Schedule";
 @use "./Components/Card/Card";
+@use "./Components/Specific_artist/Specific_artist";
 
 @use "./Components/variables" as *;
 
@@ -13,6 +14,7 @@
 
 body {
 	background-color: $white;
+	border: 1px solid $black;
 }
 
 .grid {
@@ -34,6 +36,9 @@ h2,
 h3,
 h4 {
 	font-family: $display-font;
+}
+p {
+	max-width: 54ch;
 }
 
 img {

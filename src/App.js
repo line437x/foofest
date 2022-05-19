@@ -5,6 +5,7 @@ import Landing from "./Components/Landing_page/Landing";
 import Lineup from "./Components/Landing_page/Lineup/Lineup";
 import Schedule from "./Components/Schedule/Schedule";
 import PlayingNow from "./Components/Playing_now/Playing_now";
+import SpecificArtist from "./Components/Specific_artist/Specific_artist";
 
 import { getBands, addMood } from "./Utils/data";
 
@@ -54,6 +55,7 @@ function App() {
 				<Route path="/lineup" element={<Lineup />} />
 				<Route path="/schedule" element={<Schedule />} />
 				<Route path="/playing" element={<PlayingNow />} />
+				<Route path="/artist" element={<SpecificArtist />} />
 			</Routes>
 		</div>
 	);

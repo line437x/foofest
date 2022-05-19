@@ -1,0 +1,38 @@
+@use "../variables" as *;
+
+#specific_artist {
+	#player_container,
+	#band_text {
+		background-color: $white;
+	}
+	.desciption {
+		display: grid;
+		justify-content: center;
+		padding-inline: 1rem;
+	}
+	.band_info {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		div {
+			// padding-inline: 0.5rem;
+			padding-block-end: 2rem;
+		}
+		h4 {
+			height: 0.5rem;
+		}
+		p {
+			margin-block: 0;
+		}
+	}
+	iframe {
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+	}
+}
+@media (min-width: 700px) {
+	#specific_artist {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+	}
+}
