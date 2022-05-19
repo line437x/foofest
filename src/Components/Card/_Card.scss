@@ -1,0 +1,16 @@
+@use "../variables" as *;
+
+.card {
+	background-color: $white;
+	// width: fit-content;
+	h4 {
+		position: absolute;
+		padding-inline: 0.5rem;
+	}
+	p {
+		padding-inline: 0.5rem;
+	}
+	img {
+		height: 10rem;
+	}
+}

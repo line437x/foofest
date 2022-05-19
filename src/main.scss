@@ -2,6 +2,8 @@
 @use "./Components/Landing_page/Landing";
 @use "./Components/Buttons/Button";
 @use "./Components/Banner/Banner";
+@use "./Components/Schedule/Schedule";
+@use "./Components/Card/Card";
 
 @use "./Components/variables" as *;
 
@@ -25,4 +27,17 @@ body {
 .link {
 	text-decoration-line: none;
 	color: $black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $display-font;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
 }

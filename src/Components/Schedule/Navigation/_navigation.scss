@@ -1,0 +1,24 @@
+@use "../../variables" as *;
+
+#filter_container {
+	ul {
+		list-style: none;
+		font-family: $display-font;
+		font-size: 1.3rem;
+		background-color: $white;
+		margin: 0;
+		padding-inline: 1rem;
+		text-align: right;
+	}
+	li:hover {
+		color: $blue;
+	}
+}
+@media (min-width: 700px) {
+	#filter_container {
+		ul {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+}
