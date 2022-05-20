@@ -5,7 +5,7 @@ import Slider from "./Slider/Slider";
 export default function Schedule() {
 	return (
 		<div>
-			<Banner></Banner>
+			<Banner banner="SCHEDULE"></Banner>
 			<Navigation></Navigation>
 			<Slider scene="Musa"></Slider>
 			<Slider scene="Phonicop"></Slider>

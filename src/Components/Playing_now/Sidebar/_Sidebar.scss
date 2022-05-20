@@ -1,0 +1,27 @@
+@use "../../variables" as *;
+
+#sidebar {
+	margin-block-start: 1rem;
+	border: 1px solid $black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: auto;
+	height: 10rem;
+
+	background-image: url(../../../img/background.png);
+	background-size: 100%;
+	button {
+		position: relative;
+	}
+}
+@media (min-width: 700px) {
+	#sidebar {
+		margin: 0;
+		height: 100%;
+		button {
+			position: sticky;
+		}
+	}
+}

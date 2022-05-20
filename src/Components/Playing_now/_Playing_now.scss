@@ -1,0 +1,21 @@
+@use "./Navigation/Navigation";
+@use "./Current_artist/Current";
+@use "./Next_artist/Next";
+@use "./Sidebar/Sidebar";
+
+#playing_now {
+	.content {
+		margin: 1rem;
+	}
+}
+@media (min-width: 700px) {
+	#playing_now {
+		.content_container {
+			display: grid;
+			grid-template-columns: 3fr 1fr;
+			.content {
+				margin: 5rem;
+			}
+		}
+	}
+}

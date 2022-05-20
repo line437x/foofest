@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+
+#next_artist {
+	display: flex;
+	// margin: 1rem;
+	> * {
+		width: 50%;
+		border: 1px solid $black;
+	}
+}

@@ -1,0 +1,11 @@
+@use "../../variables" as *;
+
+#scene_navigation {
+	ul {
+		display: flex;
+		justify-content: space-evenly;
+		list-style: none;
+		font-family: $display-font;
+	}
+	border-bottom: 1px solid $black;
+}
