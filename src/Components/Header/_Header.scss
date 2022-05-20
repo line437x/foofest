@@ -14,7 +14,11 @@
 	}
 	p {
 		font-family: $paragraph-font;
-		text-align: end;
 		align-self: flex-end;
+	}
+}
+@media (min-width: 700px) {
+	.header {
+		height: 15vh;
 	}
 }

@@ -5,17 +5,20 @@
 	justify-content: center;
 	padding-block-end: 3rem;
 	border-bottom: 1px solid black;
-}
 
-#card_container {
-	width: fit-content;
-	display: grid;
-	justify-content: center;
-	grid-template-columns: 1fr 1fr;
+	#card_container {
+		width: fit-content;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 @media (min-width: 700px) {
-	#card_container {
-		display: flex;
+	#slider {
+		#card_container {
+			display: flex;
+			max-width: 80vw;
+		}
 	}
 }

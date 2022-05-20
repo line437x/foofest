@@ -4,6 +4,7 @@
 
 @media (min-width: 700px) {
 	#content {
+		overflow-y: hidden;
 		display: grid;
 		grid-template-columns: 2fr 2fr;
 		.navigation {

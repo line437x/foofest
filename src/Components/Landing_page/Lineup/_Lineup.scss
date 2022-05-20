@@ -1,18 +1,25 @@
 @use "../../variables" as *;
 
 #lineup_container {
+	overflow-y: scroll;
+	height: 85vh;
 	display: grid;
 	.lineup {
 		font-family: $display-font;
 		text-align: center;
-		padding-inline: 1rem;
-		background-color: $white;
+		padding-inline: 1.5rem;
+		// background-color: $white;
 	}
 	#schedule_btn {
 		margin: 1rem;
 		justify-self: end;
 	}
 	p {
-		max-width: 200ch !important;
+		max-width: max-content !important;
+	}
+}
+@media (min-width: 700px) {
+	#lineup_container {
+		border-top: 1px solid $black;
 	}
 }

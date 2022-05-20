@@ -23,16 +23,15 @@
 }
 @media (min-width: 700px) {
 	.navigation {
-		height: max-content;
 		ul {
-			// transform-origin: bottom right;
-			// transform: rotate(90deg);
 			display: grid;
 			grid-template-rows: 1;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
+			height: 85vh;
 		}
 		li {
 			height: auto;
+			width: auto;
 			writing-mode: sideways-lr;
 		}
 	}
