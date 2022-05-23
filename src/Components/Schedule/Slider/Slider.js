@@ -1,15 +1,17 @@
 import Card from "../../Card/Card";
 
-export default function Slider(probs) {
+export default function Slider({ bands, schedule }) {
 	return (
 		<div id="slider">
-			<h3 className="scene">{probs.scene}</h3>
+			<h3 className="scene">{}</h3>
 			<div id="card_container" className="grid">
-				<Card artist="Benny" time="22:00-00:30" mood="P3’s ensamble"></Card>
-				<Card></Card>
-				<Card></Card>
-				<Card></Card>
+				{bands.map((b) => (
+					<Card {...b} bands={bands} schedule={schedule} />
+				))}
 			</div>
 		</div>
 	);
 }
+// {
+// 	products.map((p) => <Product {...p} />);
+// }
