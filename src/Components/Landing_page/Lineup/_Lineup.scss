@@ -4,19 +4,45 @@
 	overflow-y: scroll;
 	height: 85vh;
 	display: grid;
+	padding-inline: 1rem;
 	.lineup {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		font-family: $display-font;
-		text-align: center;
-		padding-inline: 1.5rem;
+		p {
+			display: inline;
+			vertical-align: middle;
+			text-align: center;
+			font-size: 1rem;
+			text-transform: uppercase;
+			line-height: 0rem;
+			span {
+				vertical-align: inherit;
+				// font-size: 3rem;
+				text-indent: 0cm;
+				padding-inline: 0.2rem;
+				height: 0rem;
+				font-size: 2rem;
+				font-family: sans-serif;
+			}
+		}
+		:nth-child(10n) {
+			color: $blue;
+			font-size: 1.2rem;
+			span {
+				color: $black;
+			}
+		}
 		// background-color: $white;
 	}
 	#schedule_btn {
 		margin: 1rem;
 		justify-self: end;
 	}
-	p {
-		max-width: max-content !important;
-	}
+	// p {
+	// 	max-width: max-content !important;
+	// }
 }
 @media (min-width: 700px) {
 	#lineup_container {
