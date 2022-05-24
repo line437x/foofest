@@ -8,6 +8,5 @@ export const ScheduleProvider = ({ children }) => {
 		schedule,
 		setSchedule,
 	};
-	return;
-	<ScheduleContext.Provider value={value}>{children}</ScheduleContext.Provider>;
+	return <ScheduleContext.Provider value={value}>{children}</ScheduleContext.Provider>;
 };

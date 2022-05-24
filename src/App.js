@@ -61,7 +61,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Landing />} />
 				<Route path="/lineup" element={<Lineup />} />
-				<Route path="/schedule" element={<Schedule bands={bands} schedule={schedule} />} />
+				<Route path="/schedule" element={<Schedule />} />
 				<Route path="/playing" element={<PlayingNow />} />
 				<Route path="/artist" element={<SpecificArtist />}>
 					<Route path=":artistid" element={<SpecificArtist />} />

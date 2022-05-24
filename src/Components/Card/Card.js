@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-
-// import pic from "../../img/place_2.jpg";
+import { useEffect, useState, useContext } from "react";
+import { ScheduleContext } from "../../contexts/scheduleContext";
 
 export default function Card(probs) {
+	const { schedule, setSchedule } = useContext(ScheduleContext);
+
 	const [logos, setLogos] = useState([]);
 
 	useEffect(() => {

@@ -15,6 +15,9 @@
 	p {
 		font-family: $paragraph-font;
 		align-self: flex-end;
+		width: 100%;
+		text-align: end;
+		max-width: none;
 	}
 }
 @media (min-width: 700px) {

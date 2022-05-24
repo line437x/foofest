@@ -5,14 +5,17 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BandsProvider } from "./contexts/bandContext";
+import { ScheduleProvider } from "./contexts/scheduleContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<BandsProvider>
-				<App />
-			</BandsProvider>
+			<ScheduleProvider>
+				<BandsProvider>
+					<App />
+				</BandsProvider>
+			</ScheduleProvider>
 		</BrowserRouter>
 	</React.StrictMode>
 );

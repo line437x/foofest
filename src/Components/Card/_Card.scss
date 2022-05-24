@@ -3,13 +3,18 @@
 .card {
 	background-color: $white;
 	h4 {
+		z-index: 1;
+		word-break: initial;
 		position: absolute;
 		padding-inline: 0.5rem;
+		background-color: $white;
+		border: 1px solid $black;
 	}
 	p {
 		padding-inline: 0.5rem;
 	}
 	img {
+		display: block;
 		border-bottom: 1px solid $black;
 		// height: 10rem;
 	}
