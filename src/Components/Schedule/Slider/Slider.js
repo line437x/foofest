@@ -1,4 +1,5 @@
 import Card from "../../Card/Card";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Slider({ bands, schedule }) {
 	return (
@@ -6,12 +7,9 @@ export default function Slider({ bands, schedule }) {
 			<h3 className="scene">{}</h3>
 			<div id="card_container" className="grid">
 				{bands.map((b) => (
-					<Card {...b} bands={bands} schedule={schedule} />
+					<Card key={uuidv4()} id={uuidv4()} {...b} bands={bands} schedule={schedule} />
 				))}
 			</div>
 		</div>
 	);
 }
-// {
-// 	products.map((p) => <Product {...p} />);
-// }

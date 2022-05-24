@@ -8,12 +8,16 @@ import PlayingNow from "./Components/Playing_now/Playing_now";
 import SpecificArtist from "./Components/Specific_artist/Specific_artist";
 
 import { getBands, addMood } from "./Utils/data";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { BandsContext } from "./contexts/bandContext";
+import { v4 as uuidv4 } from "uuid";
 
 import { ScheduleProvider } from "./contexts/scheduleContext";
 
 function App() {
-	const [bands, setBands] = useState([]);
+	const { bands, setBands } = useContext(BandsContext);
+
+	// const [bands, setBands] = useState([]);
 	const [schedule, setSchedule] = useState([]);
 	const [event, setEvent] = useState(false);
 
@@ -23,14 +27,17 @@ function App() {
 			const bandsJson = await data.json();
 
 			const cleanedBands = await addMood(bandsJson);
+			const addedId = cleanedBands.map((band) => {
+				return { ...band, id: uuidv4() };
+			});
 
-			setBands(cleanedBands);
+			setBands(addedId);
 
 			// console.log(bands);
 		};
 
 		getBands();
-	}, [schedule]);
+	}, []);
 
 	useEffect(() => {
 		const fetchSchedule = async () => {
@@ -39,10 +46,10 @@ function App() {
 
 			setSchedule(data);
 		};
+		fetchSchedule();
 
-		setInterval(() => {
-			fetchSchedule();
-		}, 10000);
+		// setInterval(() => {
+		// }, 10000);
 	}, []);
 	// console.log("Bands ", bands);
 	// console.log("Schedule ", schedule);
@@ -51,13 +58,14 @@ function App() {
 	return (
 		<div id="app">
 			<Header></Header>
-			{/* <ScheduleProvider> */}
 			<Routes>
 				<Route path="/" element={<Landing />} />
 				<Route path="/lineup" element={<Lineup />} />
 				<Route path="/schedule" element={<Schedule bands={bands} schedule={schedule} />} />
 				<Route path="/playing" element={<PlayingNow />} />
-				<Route path="/artist" element={<SpecificArtist />} />
+				<Route path="/artist" element={<SpecificArtist />}>
+					<Route path=":artistid" element={<SpecificArtist />} />
+				</Route>
 			</Routes>
 			{/* </ScheduleProvider> */}
 		</div>
