@@ -10,15 +10,17 @@ import SpecificArtist from "./Components/Specific_artist/Specific_artist";
 import { getBands, addMood } from "./Utils/data";
 import { useEffect, useState, useContext } from "react";
 import { BandsContext } from "./contexts/bandContext";
+import { ScheduleContext } from "./contexts/scheduleContext";
 import { v4 as uuidv4 } from "uuid";
 
 import { ScheduleProvider } from "./contexts/scheduleContext";
 
 function App() {
 	const { bands, setBands } = useContext(BandsContext);
+	const { schedule, setSchedule } = useContext(ScheduleContext);
 
 	// const [bands, setBands] = useState([]);
-	const [schedule, setSchedule] = useState([]);
+	// const [schedule, setSchedule] = useState([]);
 	const [event, setEvent] = useState(false);
 
 	useEffect(() => {
@@ -45,6 +47,8 @@ function App() {
 			const data = await json.json();
 
 			setSchedule(data);
+
+			// console.log("scheduledata:", data);
 		};
 		fetchSchedule();
 
@@ -67,7 +71,6 @@ function App() {
 					<Route path=":artistid" element={<SpecificArtist />} />
 				</Route>
 			</Routes>
-			{/* </ScheduleProvider> */}
 		</div>
 	);
 }

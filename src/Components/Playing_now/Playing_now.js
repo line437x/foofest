@@ -3,8 +3,11 @@ import Navigation from "./Navigation/Navigation";
 import Current from "./Current_artist/Current";
 import Next from "./Next_artist/Next";
 import Sidebar from "./Sidebar/Sidebar";
+// import { useContext } from "react";
+// import { BandsContext } from "../../contexts/bandContext";
 
 export default function PlayingNow() {
+	// const { bands, setBands } = useContext(BandsContext);
 	const scene = "Musa";
 	return (
 		<div id="playing_now">

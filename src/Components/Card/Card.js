@@ -4,7 +4,7 @@ import { ScheduleContext } from "../../contexts/scheduleContext";
 
 export default function Card(probs) {
 	const { schedule, setSchedule } = useContext(ScheduleContext);
-
+	// console.log(probs);
 	const [logos, setLogos] = useState([]);
 
 	useEffect(() => {

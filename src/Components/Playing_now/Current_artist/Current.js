@@ -1,8 +1,13 @@
-import Artist from "../../Card/Card";
+import Card from "../../Card/Card";
+import { useContext } from "react";
+import { BandsContext } from "../../../contexts/bandContext";
+
 export default function CurrentArtist() {
+	const { bands, setBands } = useContext(BandsContext);
+	console.log(bands[0]);
 	return (
 		<div id="current_artist">
-			<Artist className="artist" artist="Suspekt" time="18:00-20:00" mood="Beethoven & Cowboys"></Artist>
+			<Card className="card" {...bands[0]}></Card>
 		</div>
 	);
 }

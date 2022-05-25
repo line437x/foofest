@@ -1,29 +1,56 @@
-@use "../../variables";
+@use "../../variables" as *;
 
 #slider {
 	display: grid;
-	justify-content: center;
-	padding-block-end: 3rem;
+	// justify-content: center;
+	padding-inline: 1rem;
 	border-bottom: 1px solid black;
 
-	#card_container {
-		// width: fit-content;
-		display: grid;
-		justify-content: center;
-		grid-template-columns: 1fr 1fr;
-		.card {
-			max-width: 15rem;
-			padding-block-end: 1rem;
-			img {
-				height: 70%;
-				width: 100%;
-			}
-		}
+	h3:first-child {
+		color: green;
+	}
+	h3:nth-of-type(2) {
+		color: red;
+	}
+	h3:last-of-type {
+		color: rgb(204, 204, 57);
+	}
+
+	// #card_container {
+	// 	// width: fit-content;
+	// 	display: grid;
+	// 	justify-content: center;
+	// 	grid-template-columns: 1fr 1fr;
+	// 	.card {
+	// 		max-width: 15rem;
+	// 		padding-block-end: 1rem;
+	// 		img {
+	// 			height: 70%;
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+
+	.act_container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.artist {
+		text-align: center;
+		border: 1px solid $black;
+		width: 7rem;
+		padding-inline: 0.5rem;
+		line-height: 1rem;
+		margin: 0.3rem;
+	}
+	.artist:nth-child(2n) {
+		opacity: 50%;
 	}
 }
 
 @media (min-width: 700px) {
 	#slider {
+		padding-inline: 3rem;
 		#card_container {
 			// display: flex;
 			// flex-wrap: wrap;

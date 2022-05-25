@@ -10,13 +10,13 @@ export default function Navigation() {
 				<li>Saturday</li>
 				<li>Sunday</li>
 			</ul>
-			<ul id="mood_filter">
+			{/* <ul id="mood_filter">
 				<li>"P3's Ensamble"</li>
 				<li>"Hips Don't Lie"</li>
 				<li>"Shhh"</li>
 				<li>"Beethoven & Cowboys"</li>
 				<li>"Goat Market"</li>
-			</ul>
+			</ul> */}
 		</nav>
 	);
 }
