@@ -13,6 +13,9 @@
 	li:hover {
 		color: $blue;
 	}
+	li:focus {
+		color: $blue;
+	}
 }
 @media (min-width: 700px) {
 	#filter_container {

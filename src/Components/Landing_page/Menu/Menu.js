@@ -25,7 +25,7 @@ export default function Navigation() {
 					</li>
 					<li>
 						<img src={pic3} alt="billede" />
-						<p>EXPLORE MORE</p>
+						<p>GET YOUR TICKET HERE</p>
 					</li>
 				</ul>
 			</nav>

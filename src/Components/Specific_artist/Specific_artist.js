@@ -1,6 +1,6 @@
 import pic from "../../img/place_3.jpg";
 import { useParams, useLocation } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { BandsContext } from "../../contexts/bandContext";
 import { ScheduleContext } from "../../contexts/scheduleContext";
 
@@ -15,15 +15,6 @@ export default function SpecificArtist() {
 	const band = bands.filter((band) => {
 		return band.id === params.artistid;
 	})[0];
-
-	// console.log(band.id, params.artistid);
-	// console.log("Her er band", band);
-
-	// const playtime = schedule.map((time) => {
-	// 	return console.log("hej");
-	// });
-
-	// console.log(playtime);
 
 	return (
 		<div id="specific_artist">

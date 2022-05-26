@@ -34,8 +34,6 @@ function App() {
 			});
 
 			setBands(addedId);
-
-			// console.log(bands);
 		};
 
 		getBands();
@@ -47,8 +45,6 @@ function App() {
 			const data = await json.json();
 
 			setSchedule(data);
-
-			// console.log("scheduledata:", data);
 		};
 		fetchSchedule();
 

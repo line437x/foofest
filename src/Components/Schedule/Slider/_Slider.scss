@@ -1,39 +1,45 @@
+// #card_container {
+// 	// width: fit-content;
+// 	display: grid;
+// 	justify-content: center;
+// 	grid-template-columns: 1fr 1fr;
+// 	.card {
+// 		max-width: 15rem;
+// 		padding-block-end: 1rem;
+// 		img {
+// 			height: 70%;
+// 			width: 100%;
+// 		}
+// 	}
+// }
+
 @use "../../variables" as *;
 
 #slider {
-	display: grid;
-	// justify-content: center;
-	padding-inline: 1rem;
+	display: flex;
+	flex-direction: column;
 	border-bottom: 1px solid black;
 
-	h3:first-child {
+	section.act__wrapper:nth-child(1) > h3:nth-child(1) {
 		color: green;
 	}
-	h3:nth-of-type(2) {
+	section.act__wrapper:nth-child(2) > h3:nth-child(1) {
 		color: red;
 	}
-	h3:last-of-type {
+	section.act__wrapper:nth-child(3) > h3:nth-child(1) {
 		color: rgb(204, 204, 57);
 	}
 
-	// #card_container {
-	// 	// width: fit-content;
-	// 	display: grid;
-	// 	justify-content: center;
-	// 	grid-template-columns: 1fr 1fr;
-	// 	.card {
-	// 		max-width: 15rem;
-	// 		padding-block-end: 1rem;
-	// 		img {
-	// 			height: 70%;
-	// 			width: 100%;
-	// 		}
-	// 	}
-	// }
-
 	.act_container {
+		padding-inline: 0.5rem;
+		padding-block-end: 1rem;
 		display: flex;
+		justify-content: center;
 		flex-wrap: wrap;
+	}
+	.act__wrapper {
+		padding-inline: 0.5rem;
+		border-top: 1px solid black;
 	}
 	.artist {
 		text-align: center;
@@ -50,19 +56,21 @@
 
 @media (min-width: 700px) {
 	#slider {
-		padding-inline: 3rem;
-		#card_container {
-			// display: flex;
-			// flex-wrap: wrap;
-			display: grid;
-			grid-template-columns: repeat(5, 1fr);
-			max-width: 80vw;
-			// .card {
-			// 	max-width: 10rem;
-			// 	img {
-			// 		height: 70%;
-			// 	}
-			// }
+		.act__wrapper {
+			padding-inline: 4rem;
 		}
+		// #card_container {
+		// 	// display: flex;
+		// 	// flex-wrap: wrap;
+		// 	display: grid;
+		// 	grid-template-columns: repeat(5, 1fr);
+		// 	// max-width: 80vw;
+		// 	// .card {
+		// 	// 	max-width: 10rem;
+		// 	// 	img {
+		// 	// 		height: 70%;
+		// 	// 	}
+		// 	// }
+		// }
 	}
 }
