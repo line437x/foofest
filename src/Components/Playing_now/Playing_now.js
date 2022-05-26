@@ -13,6 +13,9 @@ export default function PlayingNow() {
 		<div id="playing_now">
 			<Banner banner="PLAYING NOW"></Banner>
 			<Navigation></Navigation>
+			<button className="back">
+				<a href="javascript:history.back()">← Go Back</a>
+			</button>
 			<div className="content_container">
 				<div className="content">
 					<div>

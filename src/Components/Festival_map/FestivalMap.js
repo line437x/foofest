@@ -5,7 +5,9 @@ export default function FestivalMap() {
 	return (
 		<div className="festival_map_container">
 			<Banner banner="FESTIVAL MAP"></Banner>
-			{/* <h1>Festival Map</h1> */}
+			<button className="back">
+				<a href="javascript:history.back()">← Go Back</a>
+			</button>
 			<figure>
 				<img className="map" src={Map} alt="Festival Map" />
 			</figure>

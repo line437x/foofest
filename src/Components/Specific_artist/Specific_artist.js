@@ -19,6 +19,9 @@ export default function SpecificArtist() {
 	return (
 		<div id="specific_artist">
 			<div id="band_text" className="grid">
+				<button className="back">
+					<a href="javascript:history.back()">← Go Back</a>
+				</button>
 				<div className="desciption">
 					<h1>{band.name}</h1>
 					<p>{band.bio}</p>

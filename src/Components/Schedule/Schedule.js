@@ -7,6 +7,9 @@ export default function Schedule() {
 		<div className="schedule">
 			<Banner banner="SCHEDULE"></Banner>
 			<Navigation></Navigation>
+			<button className="back">
+				<a href="javascript:history.back()">← Go Back</a>
+			</button>
 			<Slider></Slider>
 		</div>
 	);
