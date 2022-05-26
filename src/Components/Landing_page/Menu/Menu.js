@@ -20,7 +20,9 @@ export default function Navigation() {
 						</Link>
 					</li>
 					<li>
-						<p>FESTIVAL MAP</p>
+						<Link className="link" to="/festivalmap">
+							<p>FESTIVAL MAP</p>
+						</Link>
 						<img src={pic2} alt="billede" />
 					</li>
 					<li>

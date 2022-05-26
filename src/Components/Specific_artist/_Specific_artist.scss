@@ -1,6 +1,9 @@
 @use "../variables" as *;
 
 #specific_artist {
+	p {
+		font-family: $paragraph-font;
+	}
 	#player_container,
 	#band_text {
 		background-color: $white;

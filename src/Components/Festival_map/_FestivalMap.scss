@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.festival_map_container {
+	figure {
+		margin-block-start: 3rem;
+		display: flex;
+		justify-content: center;
+		.map {
+			height: auto;
+			max-width: 40rem;
+		}
+	}
+}

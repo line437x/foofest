@@ -3,7 +3,8 @@
 @use "./Components/Buttons/Button";
 @use "./Components/Banner/Banner";
 @use "./Components/Schedule/Schedule";
-@use "./Components/Card/Card";
+// @use "./Components/Card/Card";
+@use "./Components/Festival_map/FestivalMap";
 @use "./Components/Specific_artist/Specific_artist";
 @use "./Components/Playing_now/Playing_now";
 
@@ -16,6 +17,7 @@
 body {
 	background-color: $white;
 	border: 1px solid $black;
+	min-height: 100vh;
 }
 
 .grid {

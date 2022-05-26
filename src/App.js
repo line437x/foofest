@@ -5,6 +5,7 @@ import Landing from "./Components/Landing_page/Landing";
 import Lineup from "./Components/Landing_page/Lineup/Lineup";
 import Schedule from "./Components/Schedule/Schedule";
 import PlayingNow from "./Components/Playing_now/Playing_now";
+import FestivalMap from "./Components/Festival_map/FestivalMap";
 import SpecificArtist from "./Components/Specific_artist/Specific_artist";
 
 import { getBands, addMood } from "./Utils/data";
@@ -13,14 +14,10 @@ import { BandsContext } from "./contexts/bandContext";
 import { ScheduleContext } from "./contexts/scheduleContext";
 import { v4 as uuidv4 } from "uuid";
 
-import { ScheduleProvider } from "./contexts/scheduleContext";
-
 function App() {
 	const { bands, setBands } = useContext(BandsContext);
 	const { schedule, setSchedule } = useContext(ScheduleContext);
 
-	// const [bands, setBands] = useState([]);
-	// const [schedule, setSchedule] = useState([]);
 	const [event, setEvent] = useState(false);
 
 	useEffect(() => {
@@ -51,9 +48,6 @@ function App() {
 		// setInterval(() => {
 		// }, 10000);
 	}, []);
-	// console.log("Bands ", bands);
-	// console.log("Schedule ", schedule);
-	// getBands();
 
 	return (
 		<div id="app">
@@ -63,6 +57,7 @@ function App() {
 				<Route path="/lineup" element={<Lineup />} />
 				<Route path="/schedule" element={<Schedule />} />
 				<Route path="/playing" element={<PlayingNow />} />
+				<Route path="/festivalmap" element={<FestivalMap />} />
 				<Route path="/artist" element={<SpecificArtist />}>
 					<Route path=":artistid" element={<SpecificArtist />} />
 				</Route>

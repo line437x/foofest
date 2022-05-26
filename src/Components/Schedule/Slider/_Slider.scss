@@ -21,13 +21,13 @@
 	border-bottom: 1px solid black;
 
 	section.act__wrapper:nth-child(1) > h3:nth-child(1) {
-		color: green;
+		color: $green;
 	}
 	section.act__wrapper:nth-child(2) > h3:nth-child(1) {
-		color: red;
+		color: $red;
 	}
 	section.act__wrapper:nth-child(3) > h3:nth-child(1) {
-		color: rgb(204, 204, 57);
+		color: $yellow;
 	}
 
 	.act_container {

@@ -1,2 +1,9 @@
 @use "./Navigation/Navigation";
 @use "./Slider/Slider";
+@use "../variables" as *;
+
+.schedule {
+	p {
+		font-family: $paragraph-font;
+	}
+}
