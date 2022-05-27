@@ -3,6 +3,7 @@ import { useParams, useLocation } from "react-router-dom";
 import { useContext, useState, useEffect } from "react";
 import { BandsContext } from "../../contexts/bandContext";
 import { ScheduleContext } from "../../contexts/scheduleContext";
+import Button from "../Buttons/Button";
 
 export default function SpecificArtist() {
 	const location = useLocation();
@@ -19,9 +20,7 @@ export default function SpecificArtist() {
 	return (
 		<div id="specific_artist">
 			<div id="band_text" className="grid">
-				<button className="back">
-					<a href="javascript:history.back()">← Go Back</a>
-				</button>
+				<Button></Button>
 				<div className="desciption">
 					<h1>{band.name}</h1>
 					<p>{band.bio}</p>

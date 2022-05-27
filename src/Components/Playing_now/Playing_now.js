@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import Button from "../Buttons/Button";
 import Navigation from "./Navigation/Navigation";
 import Current from "./Current_artist/Current";
 import Next from "./Next_artist/Next";
@@ -13,9 +14,7 @@ export default function PlayingNow() {
 		<div id="playing_now">
 			<Banner banner="PLAYING NOW"></Banner>
 			<Navigation></Navigation>
-			<button className="back">
-				<a href="javascript:history.back()">← Go Back</a>
-			</button>
+			<Button></Button>
 			<div className="content_container">
 				<div className="content">
 					<div>

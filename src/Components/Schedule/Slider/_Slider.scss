@@ -47,6 +47,11 @@
 		padding-inline: 0.5rem;
 		line-height: 1rem;
 		margin: 0.3rem;
+		article a {
+			color: $black;
+			font-family: $paragraph-font;
+			font-size: 0.7rem;
+		}
 	}
 	.artist:nth-child(2n) {
 		opacity: 50%;
