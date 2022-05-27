@@ -1,4 +1,4 @@
-@use "./Navigation/Navigation";
+@use "./Navigation/navigation";
 @use "./Slider/Slider";
 @use "../Buttons/Button";
 @use "../variables" as *;
@@ -6,5 +6,11 @@
 .schedule {
 	p {
 		font-family: $paragraph-font;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 4rem;
+		margin: 0;
 	}
 }

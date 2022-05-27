@@ -9,6 +9,9 @@
 		margin: 0;
 		padding-inline: 1rem;
 		text-align: right;
+		& .filter_active {
+			color: $blue !important;
+		}
 	}
 	li:hover {
 		color: $blue;

@@ -1,51 +1,28 @@
 import { useState } from "react";
 export default function Navigation(props) {
-	const [day, setDay] = useState("monday");
-	const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-
-	function filterByDay() {
-		switch (props.daySchedule) {
+	function filterByDay(e) {
+		const searchQuery = e.target.innerHTML.toLowerCase();
+		switch (searchQuery) {
 			case "monday":
-				props.setMidgardFilter(props.schedule.Midgard.mon);
-				props.setJotunFilter(props.schedule.Jotunheim.mon);
-				props.setVanaFilter(props.schedule.Vanaheim.mon);
-				setDay("monday");
+				props.setDay("mon");
 				break;
 			case "tuesday":
-				props.setMidgardFilter(props.schedule.Midgard.tue);
-				props.setJotunFilter(props.schedule.Jotunheim.tue);
-				props.setVanaFilter(props.schedule.Vanaheim.tue);
-				setDay("tuesday");
+				props.setDay("tue");
 				break;
-			case "wednesday":
-				props.setMidgardFilter(props.schedule.Midgard.wed);
-				props.setJotunFilter(props.schedule.Jotunheim.wed);
-				props.setVanaFilter(props.schedule.Vanaheim.wed);
-				setDay("wednesday");
+			case "wedensday":
+				props.setDay("wed");
 				break;
 			case "thursday":
-				props.setMidgardFilter(props.schedule.Midgard.thu);
-				props.setJotunFilter(props.schedule.Jotunheim.thu);
-				props.setVanaFilter(props.schedule.Vanaheim.thu);
-				setDay("thursday");
+				props.setDay("thu");
 				break;
 			case "friday":
-				props.setMidgardFilter(props.schedule.Midgard.fri);
-				props.setJotunFilter(props.schedule.Jotunheim.fri);
-				props.setVanaFilter(props.schedule.Vanaheim.fri);
-				setDay("friday");
+				props.setDay("fri");
 				break;
 			case "saturday":
-				props.setMidgardFilter(props.schedule.Midgard.sat);
-				props.setJotunFilter(props.schedule.Jotunheim.sat);
-				props.setVanaFilter(props.schedule.Vanaheim.sat);
-				setDay("saturday");
+				props.setDay("sat");
 				break;
 			case "sunday":
-				props.setMidgardFilter(props.schedule.Midgard.sun);
-				props.setJotunFilter(props.schedule.Jotunheim.sun);
-				props.setVanaFilter(props.schedule.Vanaheim.sun);
-				setDay("sunday");
+				props.setDay("sun");
 				break;
 			default:
 				console.log("no match");
@@ -54,13 +31,27 @@ export default function Navigation(props) {
 	return (
 		<nav id="filter_container" className="grid">
 			<ul id="day_filter">
-				<li>Monday</li>
-				<li>Tuesday</li>
-				<li>Wedensday</li>
-				<li>Thursday</li>
-				<li>Friday</li>
-				<li>Saturday</li>
-				<li>Sunday</li>
+				<li onClick={filterByDay} className={props.day === "mon" ? "filter_active" : ""}>
+					Monday
+				</li>
+				<li onClick={filterByDay} className={props.day === "tue" ? "filter_active" : ""}>
+					Tuesday
+				</li>
+				<li onClick={filterByDay} className={props.day === "wed" ? "filter_active" : ""}>
+					Wedensday
+				</li>
+				<li onClick={filterByDay} className={props.day === "thu" ? "filter_active" : ""}>
+					Thursday
+				</li>
+				<li onClick={filterByDay} className={props.day === "fri" ? "filter_active" : ""}>
+					Friday
+				</li>
+				<li onClick={filterByDay} className={props.day === "sat" ? "filter_active" : ""}>
+					Saturday
+				</li>
+				<li onClick={filterByDay} className={props.day === "sun" ? "filter_active" : ""}>
+					Sunday
+				</li>
 			</ul>
 		</nav>
 	);
