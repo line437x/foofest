@@ -8,23 +8,23 @@ export default function Navigation() {
 		<div className="navigation">
 			<nav>
 				<ul className="grid">
-					<li>
-						<img src={pic1} alt="billede" />
-						<Link className="link" to="/schedule">
+					<Link className="link" to="/schedule">
+						<li>
+							<img src={pic1} alt="billede" />
 							<h3>SCHEDULE</h3>
-						</Link>
-					</li>
-					<li>
-						<Link className="link" to="/playing">
+						</li>
+					</Link>
+					<Link className="link" to="/playing">
+						<li>
 							<h3>PLAYING NOW</h3>
-						</Link>
-					</li>
-					<li>
-						<Link className="link" to="/festivalmap">
+						</li>
+					</Link>
+					<Link className="link" to="/festivalmap">
+						<li>
 							<h3>FESTIVAL MAP</h3>
-						</Link>
-						<img src={pic2} alt="billede" />
-					</li>
+							<img src={pic2} alt="billede" />
+						</li>
+					</Link>
 					<li>
 						<img src={pic3} alt="billede" />
 						<h3>GET YOUR TICKET HERE</h3>
