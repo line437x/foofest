@@ -11,23 +11,23 @@ export default function Navigation() {
 					<li>
 						<img src={pic1} alt="billede" />
 						<Link className="link" to="/schedule">
-							<p>SCHEDULE</p>
+							<h3>SCHEDULE</h3>
 						</Link>
 					</li>
 					<li>
 						<Link className="link" to="/playing">
-							<p>PLAYING NOW</p>
+							<h3>PLAYING NOW</h3>
 						</Link>
 					</li>
 					<li>
 						<Link className="link" to="/festivalmap">
-							<p>FESTIVAL MAP</p>
+							<h3>FESTIVAL MAP</h3>
 						</Link>
 						<img src={pic2} alt="billede" />
 					</li>
 					<li>
 						<img src={pic3} alt="billede" />
-						<p>GET YOUR TICKET HERE</p>
+						<h3>GET YOUR TICKET HERE</h3>
 					</li>
 				</ul>
 			</nav>

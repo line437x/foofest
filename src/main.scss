@@ -19,6 +19,11 @@ body {
 	border: 1px solid $black;
 	min-height: 100vh;
 }
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 .grid {
 	margin: 0;
@@ -37,15 +42,26 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+button {
 	font-family: $display-font;
+}
+
+h1,
+h2 {
+	font-size: $large;
+}
+
+h3 {
+	font-size: $medium;
+}
+h4 {
+	font-size: $small;
 }
 p {
 	max-width: 54ch;
+	font-size: $small;
 }
-
-img {
-	display: block;
-	width: 100%;
-	height: auto;
+button {
+	font-size: $mix2;
 }

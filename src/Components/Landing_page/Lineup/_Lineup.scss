@@ -1,6 +1,7 @@
 @use "../../variables" as *;
 
 #lineup_container {
+	border-top: 1px solid $black;
 	overflow-y: scroll;
 	height: 85vh;
 	display: grid;
@@ -14,12 +15,10 @@
 			display: inline;
 			vertical-align: middle;
 			text-align: center;
-			font-size: 1rem;
 			text-transform: uppercase;
 			line-height: 0rem;
 			span {
 				vertical-align: inherit;
-				// font-size: 3rem;
 				text-indent: 0cm;
 				padding-inline: 0.2rem;
 				height: 0rem;
@@ -29,25 +28,16 @@
 		}
 		:nth-child(10n) {
 			color: $blue;
-			font-size: 1.2rem;
+			font-size: $medium;
 			span {
 				color: $black;
 			}
 		}
-		// background-color: $white;
 	}
 	#schedule_btn {
 		margin: 1rem;
 		justify-self: end;
 		position: fixed;
 		bottom: 5%;
-	}
-	// p {
-	// 	max-width: max-content !important;
-	// }
-}
-@media (min-width: 700px) {
-	#lineup_container {
-		border-top: 1px solid $black;
 	}
 }

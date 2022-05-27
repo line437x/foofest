@@ -15,9 +15,9 @@
 			max-height: 100%;
 			width: auto;
 		}
-		p {
-			padding-inline: 1rem;
-			font-size: 1.8rem;
+		h3 {
+			padding-inline: 2rem;
+			// font-size: $medium;
 		}
 	}
 }
@@ -27,6 +27,9 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			height: 85vh;
+			h3 {
+				font-size: $mix1;
+			}
 		}
 		li {
 			height: auto;

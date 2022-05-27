@@ -45,12 +45,12 @@
 		border: 1px solid $black;
 		width: 7rem;
 		padding-inline: 0.5rem;
-		line-height: 1rem;
+		line-height: 1.5rem;
 		margin: 0.3rem;
 		article a {
 			color: $black;
 			font-family: $paragraph-font;
-			font-size: 0.7rem;
+			font-size: $tiny;
 		}
 	}
 	.artist:nth-child(2n) {

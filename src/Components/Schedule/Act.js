@@ -38,7 +38,7 @@ export default function Act(props) {
 					<p>
 						{props.start}-{props.end}
 					</p>
-					<a href="">Show details</a>
+					{/* <a href="">Show details</a> */}
 				</article>
 			</Link>
 		</div>
