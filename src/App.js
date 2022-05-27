@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./main.scss";
 import Header from "./Components/Header/Header";
 import Landing from "./Components/Landing_page/Landing";

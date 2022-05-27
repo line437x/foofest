@@ -1,8 +1,8 @@
-import pic from "../../img/place_3.jpg";
 import { useParams, useLocation } from "react-router-dom";
-import { useContext, useState, useEffect } from "react";
+import { useContext } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { BandsContext } from "../../contexts/bandContext";
-import { ScheduleContext } from "../../contexts/scheduleContext";
+// import { ScheduleContext } from "../../contexts/scheduleContext";
 import Button from "../Buttons/Button";
 
 export default function SpecificArtist() {
@@ -10,7 +10,7 @@ export default function SpecificArtist() {
 	const { logos } = location.state;
 
 	const { bands, setBands } = useContext(BandsContext);
-	const { schedule, setSchedule } = useContext(ScheduleContext);
+	// const { schedule, setSchedule } = useContext(ScheduleContext);
 	const params = useParams();
 
 	const band = bands.filter((band) => {
@@ -29,7 +29,7 @@ export default function SpecificArtist() {
 						<div>
 							<h4>Band members:</h4>
 							{band.members.map((m) => {
-								return <p>{m}</p>;
+								return <p key={uuidv4()}>{m}</p>;
 							})}
 						</div>
 						<div>

@@ -1,15 +1,14 @@
-// import Card from "../../Card/Card";
 import Act from "../Act";
-import { useEffect, useState, useContext } from "react";
-import { BandsContext } from "../../../contexts/bandContext";
+import { useContext } from "react";
+// import { BandsContext } from "../../../contexts/bandContext";
 import { ScheduleContext } from "../../../contexts/scheduleContext";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Slider(props) {
-	const { bands, setBands } = useContext(BandsContext);
+	// const { bands, setBands } = useContext(BandsContext);
 	const { schedule, setSchedule } = useContext(ScheduleContext);
 
-	console.log(schedule.Midgard);
+	// console.log(schedule.Midgard);
 	const midgard = schedule.Midgard[props.day];
 	const jotunheim = schedule.Jotunheim[props.day];
 	const vanaheim = schedule.Vanaheim[props.day];

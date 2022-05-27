@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
-import { ScheduleContext } from "../../contexts/scheduleContext";
 import { BandsContext } from "../../contexts/bandContext";
 
 export default function Act(props) {

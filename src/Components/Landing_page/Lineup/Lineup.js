@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { BandsContext } from "../../../contexts/bandContext";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Lineup() {
 	const { bands, setBands } = useContext(BandsContext);
@@ -10,7 +11,7 @@ export default function Lineup() {
 			<div className="lineup">
 				{bands.map((m) => {
 					return (
-						<p>
+						<p key={uuidv4()}>
 							{m.name}
 							<span>&#183;</span>
 						</p>

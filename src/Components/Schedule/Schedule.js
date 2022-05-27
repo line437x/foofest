@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Banner from "../Banner/Banner";
 import Navigation from "./Navigation/Navigation";

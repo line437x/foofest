@@ -1,4 +1,3 @@
-import Header from "../Header/Header";
 import Navigation from "./Menu/Menu";
 import Lineup from "./Lineup/Lineup";
 

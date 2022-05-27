@@ -1,4 +1,3 @@
-import { useState } from "react";
 export default function Navigation(props) {
 	function filterByDay(e) {
 		const searchQuery = e.target.innerHTML.toLowerCase();
