@@ -17,6 +17,7 @@
 			text-align: center;
 			text-transform: uppercase;
 			line-height: 0rem;
+			font-size: $tiny;
 			span {
 				vertical-align: inherit;
 				text-indent: 0cm;
@@ -28,7 +29,7 @@
 		}
 		:nth-child(10n) {
 			color: $blue;
-			font-size: $medium;
+			font-size: $small;
 			span {
 				color: $black;
 			}

@@ -28,7 +28,7 @@
 		}
 	}
 	iframe {
-		// width: 100%;
+		width: 100%;
 		position: fixed;
 		bottom: 0;
 	}
@@ -38,5 +38,9 @@
 		height: 85vh;
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
+		iframe {
+			position: relative;
+			height: 380px;
+		}
 	}
 }
