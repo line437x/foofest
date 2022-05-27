@@ -13,4 +13,14 @@
 		// font-size: $xlarge;
 		margin: 0;
 	}
+	.schedule_text {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0.7rem;
+		p {
+			text-align: center;
+			line-height: 1.7rem;
+		}
+	}
 }

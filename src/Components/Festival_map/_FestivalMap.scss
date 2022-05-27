@@ -10,4 +10,14 @@
 			max-width: 40rem;
 		}
 	}
+	.map_text {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: 0.7rem;
+		p {
+			text-align: center;
+			line-height: 1.7rem;
+		}
+	}
 }
