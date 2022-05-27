@@ -5,7 +5,7 @@
 	overflow-y: scroll;
 	height: 85vh;
 	display: grid;
-	padding-inline: 1rem;
+	padding-block-start: 1rem;
 	.lineup {
 		display: flex;
 		flex-wrap: wrap;
@@ -17,6 +17,7 @@
 			text-align: center;
 			text-transform: uppercase;
 			line-height: 0rem;
+			font-size: $tiny;
 			span {
 				vertical-align: inherit;
 				text-indent: 0cm;
@@ -28,7 +29,7 @@
 		}
 		:nth-child(10n) {
 			color: $blue;
-			font-size: $medium;
+			font-size: $small;
 			span {
 				color: $black;
 			}
@@ -39,5 +40,11 @@
 		justify-self: end;
 		position: fixed;
 		bottom: 5%;
+	}
+}
+
+@media (min-width: 1000px) {
+	#lineup_container {
+		padding-inline: 3rem;
 	}
 }

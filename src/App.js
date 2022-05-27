@@ -15,8 +15,8 @@ import { ScheduleContext } from "./contexts/scheduleContext";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
-	const { setBands } = useContext(BandsContext);
-	const { setSchedule } = useContext(ScheduleContext);
+	const { bands, setBands } = useContext(BandsContext);
+	const { schedule, setSchedule } = useContext(ScheduleContext);
 
 	// const [event, setEvent] = useState(false);
 
