@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
-import { ScheduleContext } from "../../contexts/scheduleContext";
+// import { ScheduleContext } from "../../contexts/scheduleContext";
 
 export default function Card(probs) {
-	const { schedule, setSchedule } = useContext(ScheduleContext);
-	// console.log(probs);
+	// const { schedule, setSchedule } = useContext(ScheduleContext);
 	const [logos, setLogos] = useState([]);
 
 	useEffect(() => {
@@ -14,9 +13,6 @@ export default function Card(probs) {
 			setLogos(`https://foofest-bananas.herokuapp.com/logos/${probs.logo}`);
 		}
 	}, []);
-
-	// console.log(Object.values(probs.schedule));
-	// console.log(probs);
 
 	return (
 		<div className="card">

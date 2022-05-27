@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { BandsContext } from "../../../contexts/bandContext";
 
 export default function CurrentArtist() {
-	const { bands, setBands } = useContext(BandsContext);
+	const { bands } = useContext(BandsContext);
 	console.log(bands[0]);
 	return (
 		<div id="current_artist">

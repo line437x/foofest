@@ -4,7 +4,7 @@ import { BandsContext } from "../../../contexts/bandContext";
 import { v4 as uuidv4 } from "uuid";
 
 export default function Lineup() {
-	const { bands, setBands } = useContext(BandsContext);
+	const { bands } = useContext(BandsContext);
 
 	return (
 		<div id="lineup_container">

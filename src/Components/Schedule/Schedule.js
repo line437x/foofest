@@ -5,7 +5,7 @@ import Navigation from "./Navigation/Navigation";
 import Slider from "./Slider/Slider";
 import Button from "../Buttons/Button";
 
-export default function Schedule(props) {
+export default function Schedule() {
 	const [day, setDay] = useState("mon");
 
 	let dayPicked = getDay();

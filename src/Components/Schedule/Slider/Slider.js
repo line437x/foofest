@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function Slider(props) {
 	// const { bands, setBands } = useContext(BandsContext);
-	const { schedule, setSchedule } = useContext(ScheduleContext);
+	const { schedule } = useContext(ScheduleContext);
 
 	// console.log(schedule.Midgard);
 	const midgard = schedule.Midgard[props.day];

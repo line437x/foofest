@@ -8,17 +8,17 @@ import PlayingNow from "./Components/Playing_now/Playing_now";
 import FestivalMap from "./Components/Festival_map/FestivalMap";
 import SpecificArtist from "./Components/Specific_artist/Specific_artist";
 
-import { getBands, addMood } from "./Utils/data";
-import { useEffect, useState, useContext } from "react";
+import { addMood } from "./Utils/data";
+import { useEffect, useContext } from "react";
 import { BandsContext } from "./contexts/bandContext";
 import { ScheduleContext } from "./contexts/scheduleContext";
 import { v4 as uuidv4 } from "uuid";
 
 function App() {
-	const { bands, setBands } = useContext(BandsContext);
-	const { schedule, setSchedule } = useContext(ScheduleContext);
+	const { setBands } = useContext(BandsContext);
+	const { setSchedule } = useContext(ScheduleContext);
 
-	const [event, setEvent] = useState(false);
+	// const [event, setEvent] = useState(false);
 
 	useEffect(() => {
 		const getBands = async () => {

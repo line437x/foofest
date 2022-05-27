@@ -9,7 +9,7 @@ export default function SpecificArtist() {
 	const location = useLocation();
 	const { logos } = location.state;
 
-	const { bands, setBands } = useContext(BandsContext);
+	const { bands } = useContext(BandsContext);
 	// const { schedule, setSchedule } = useContext(ScheduleContext);
 	const params = useParams();
 

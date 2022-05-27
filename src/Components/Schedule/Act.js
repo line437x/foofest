@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import { BandsContext } from "../../contexts/bandContext";
 
 export default function Act(props) {
-	const { bands, setBands } = useContext(BandsContext);
+	const { bands } = useContext(BandsContext);
 	const [bandId, setBandId] = useState("");
 
 	const [logos, setLogos] = useState([]);
