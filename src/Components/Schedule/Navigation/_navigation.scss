@@ -2,13 +2,18 @@
 
 #filter_container {
 	ul {
+		padding-block: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		line-height: 1.3rem;
+		justify-content: center;
 		list-style: none;
 		font-family: $display-font;
 		font-size: $medium;
 		background-color: $white;
 		margin: 0;
 		padding-inline: 1rem;
-		text-align: right;
 		& .filter_active {
 			color: $blue !important;
 		}
@@ -23,7 +28,6 @@
 @media (min-width: 700px) {
 	#filter_container {
 		ul {
-			display: flex;
 			justify-content: space-evenly;
 		}
 	}
