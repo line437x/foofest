@@ -17,7 +17,7 @@ export default function Navigation() {
 					</Link>
 					<Link className="link" to="/playing">
 						<li>
-							<h3>PLAYING NOW</h3>
+							<h3>PLAYING NOW !!!</h3>
 						</li>
 					</Link>
 					<Link className="link" to="/festivalmap">
