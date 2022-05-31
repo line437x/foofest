@@ -1,11 +1,16 @@
 @use "../../variables" as *;
 
 .navigation {
+	a {
+		text-decoration: none;
+		color: $black;
+	}
 	ul {
 		font-family: $display-font;
 	}
 	li {
-		height: 4.5rem;
+		min-height: 4.5rem;
+		// height: fit-content;
 		list-style: none;
 		background-color: $white;
 		display: flex;
@@ -17,8 +22,22 @@
 		}
 		h3 {
 			padding-inline: 2rem;
+			line-height: 2rem;
 			// font-size: $medium;
 		}
+		// figure {
+		// 	height: 100%;
+		// 	width: 30%;
+		// 	margin: 0;
+		// 	.menu_img {
+		// 		margin: 0;
+		// 		background-color: $blue;
+		// 		// background-image: url(../../../img/place_3.jpg);
+		// 		background-position: center;
+		// 		height: 100%;
+		// 		width: 100%;
+		// 	}
+		// }
 	}
 }
 @media (min-width: 700px) {
