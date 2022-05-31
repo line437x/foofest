@@ -1,0 +1,18 @@
+@use "../variables" as *;
+
+.footer {
+	height: 7rem;
+	border: 1px solid $black;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	span {
+		text-decoration: underline;
+	}
+	.icons {
+		display: flex;
+		gap: 1rem;
+	}
+}

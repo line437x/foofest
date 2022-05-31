@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./main.scss";
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import Landing from "./Components/Landing_page/Landing";
 import Lineup from "./Components/Landing_page/Lineup/Lineup";
 import Schedule from "./Components/Schedule/Schedule";
@@ -62,6 +63,7 @@ function App() {
 					<Route path=":artistid" element={<SpecificArtist />} />
 				</Route>
 			</Routes>
+			<Footer></Footer>
 		</div>
 	);
 }
