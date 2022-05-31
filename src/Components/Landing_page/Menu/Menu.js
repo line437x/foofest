@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import pic1 from "../../../img/place_2.jpg";
-import pic2 from "../../../img/place_2.jpg";
-import pic3 from "../../../img/place_3.jpg";
+import pic1 from "../../../img/coffee.png";
+import pic2 from "../../../img/beer.png";
+import pic3 from "../../../img/milk.png";
 
 export default function Navigation() {
 	return (
@@ -10,9 +10,7 @@ export default function Navigation() {
 				<ul className="grid">
 					<Link className="link" to="/schedule">
 						<li>
-							{/* <figure>
-								<div className="menu_img"></div>
-							</figure> */}
+							<div className="menu_img pic1 "></div>
 							{/* <img src={pic1} alt="billede" /> */}
 							<h3>SCHEDULE</h3>
 						</li>
@@ -25,17 +23,15 @@ export default function Navigation() {
 					<Link className="link" to="/festivalmap">
 						<li>
 							<h3>FESTIVAL MAP</h3>
-							{/* <figure>
-								<div className="menu_img"></div>
-							</figure> */}
+
+							<div className="menu_img pic2"></div>
+
 							{/* <img src={pic2} alt="billede" /> */}
 						</li>
 					</Link>
 					<a href="https://foofest-booking.netlify.app" target="_blank">
 						<li>
-							{/* <figure>
-							<div className="menu_img"></div>
-						</figure> */}
+							<div className="menu_img pic3"></div>
 							{/* <img src={pic3} alt="billede" /> */}
 							<h3>GET YOUR TICKET HERE</h3>
 						</li>

@@ -9,35 +9,38 @@
 		font-family: $display-font;
 	}
 	li {
-		min-height: 4.5rem;
+		// min-height: 4.5rem;
+		// max-height: 4.5rem;
 		// height: fit-content;
 		list-style: none;
 		background-color: $white;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		img {
-			max-height: 100%;
-			width: auto;
-		}
 		h3 {
 			padding-inline: 2rem;
 			line-height: 2rem;
 			// font-size: $medium;
 		}
-		// figure {
-		// 	height: 100%;
-		// 	width: 30%;
-		// 	margin: 0;
-		// 	.menu_img {
-		// 		margin: 0;
-		// 		background-color: $blue;
-		// 		// background-image: url(../../../img/place_3.jpg);
-		// 		background-position: center;
-		// 		height: 100%;
-		// 		width: 100%;
-		// 	}
-		// }
+
+		.pic1 {
+			height: 5rem;
+			width: 30%;
+			background-image: url(../../../img/coffee.png);
+			background-size: contain;
+		}
+		.pic2 {
+			height: 5rem;
+			width: 30%;
+			background-image: url(../../../img/beer.png);
+			background-size: contain;
+		}
+		.pic3 {
+			height: 4rem;
+			width: 25%;
+			background-image: url(../../../img/milk.png);
+			background-size: contain;
+		}
 	}
 }
 @media (min-width: 700px) {
@@ -57,10 +60,21 @@
 			:hover {
 				color: $blue;
 			}
-			img {
-				// display: inline-block;
-				height: 30%;
+			.pic1 {
+				height: 50%;
 				width: 100%;
+				background-size: cover;
+			}
+			.pic2 {
+				height: 50%;
+				width: 100%;
+				background-size: cover;
+			}
+			.pic3 {
+				height: 30%;
+				width: 90%;
+				background-size: cover;
+				background-position-y: bottom;
 			}
 		}
 	}
