@@ -5,7 +5,7 @@
 	overflow-y: scroll;
 	height: 85vh;
 	display: grid;
-	padding-block-start: 1rem;
+	// padding-block-start: 1rem;
 	.lineup {
 		display: flex;
 		flex-wrap: wrap;
@@ -38,7 +38,7 @@
 	#schedule_btn {
 		margin: 1rem;
 		justify-self: end;
-		position: fixed;
+		position: sticky;
 		bottom: 5%;
 	}
 }
