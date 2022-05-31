@@ -1,6 +1,16 @@
 @use "../variables" as *;
 
 #specific_artist {
+	figure {
+		img {
+			margin: 0;
+		}
+		font-family: $paragraph-font;
+		font-size: x-small;
+		font-style: italic;
+		text-align: center;
+		margin: 0;
+	}
 	p {
 		font-family: $paragraph-font;
 	}

@@ -35,15 +35,18 @@ export default function SpecificArtist() {
 						<div>
 							<h4>Genre:</h4>
 							<p>{band.genre}</p>
-							<h4>Playing:</h4>
-							<p>20:30 at Midgard</p>
+							<h4>Mood:</h4>
+							<p>{band.mood}</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="player_container" className="grid">
-				<img src={logos.logos} alt="" />
-				<iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0SM0LYsmbMT?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+				<figure>
+					<figcaption>{band.logoCredits}</figcaption>
+					<img src={logos.logos} alt="" />
+				</figure>
+				<iframe src="https://open.spotify.com/embed/playlist/5nqguiHEZDhFDs0szDS8eu?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 			</div>
 		</div>
 	);
