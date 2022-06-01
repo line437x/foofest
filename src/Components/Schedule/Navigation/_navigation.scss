@@ -18,6 +18,9 @@
 			color: $blue !important;
 		}
 	}
+	li {
+		cursor: pointer;
+	}
 	li:hover {
 		color: $blue;
 	}

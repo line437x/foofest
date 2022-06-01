@@ -4,10 +4,26 @@ button.secondary {
 	height: 3rem;
 	width: fit-content;
 	padding-inline: 1rem;
-	border: solid $black 1px;
-	background-color: $white;
+	color: $white;
+	border: solid $blue 1px;
+	background-color: $blue;
 
 	text-transform: uppercase;
+	cursor: pointer;
+	transition: 200ms;
+	&:hover {
+		color: $blue;
+		border: solid $blue 1px;
+		background-color: $white;
+
+		svg {
+			fill: black;
+		}
+	}
+
+	& svg {
+		fill: $white;
+	}
 }
 button.back {
 	height: 3rem;
@@ -16,6 +32,7 @@ button.back {
 	border: none;
 	background-color: $white;
 	color: $black;
+	cursor: pointer;
 	a {
 		text-decoration: none;
 		color: $black;

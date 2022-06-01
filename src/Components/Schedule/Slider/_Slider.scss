@@ -38,27 +38,44 @@
 		padding-inline: 0.5rem;
 		padding-block-end: 1rem;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
 	.act__wrapper {
 		padding-inline: 0.5rem;
 	}
 	.artist {
+		height: 9.6rem;
 		text-align: center;
 		border: 1px solid $black;
 		width: 7rem;
 		padding-inline: 0.5rem;
 		line-height: 1.5rem;
 		margin: 0.3rem;
-		article a {
+
+		a article {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 			color: $black;
 			font-family: $paragraph-font;
 			font-size: $tiny;
+
+			& > * {
+				margin-block-start: 0.5rem;
+			}
+		}
+		transition: 200ms;
+		&:hover {
+			transform: translateY(-3%);
+			background-color: rgb(209, 209, 247);
 		}
 	}
 	.artist:nth-child(2n) {
 		opacity: 50%;
+		pointer-events: none;
+		cursor: default;
 	}
 }
 
