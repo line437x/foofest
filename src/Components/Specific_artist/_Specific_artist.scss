@@ -45,11 +45,11 @@
 }
 @media (min-width: 700px) {
 	#specific_artist {
-		height: 85vh;
+		min-height: 85vh;
 		display: grid;
 		grid-template-columns: 1.5fr 1fr;
 		iframe {
-			position: relative;
+			position: sticky;
 			height: 380px;
 		}
 	}
