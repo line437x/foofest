@@ -5,8 +5,8 @@
 	overflow-y: scroll;
 	height: 85vh;
 	display: grid;
-	// padding-block-start: 1rem;
 	.lineup {
+		padding-block-start: 1rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
