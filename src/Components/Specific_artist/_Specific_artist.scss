@@ -27,11 +27,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		div {
-			// padding-inline: 0.5rem;
 			padding-block-end: 2rem;
 		}
 		h4 {
 			height: 0.5rem;
+			font-size: $tiny;
 		}
 		p {
 			margin-block: 0;
