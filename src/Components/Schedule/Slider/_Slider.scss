@@ -38,7 +38,7 @@
 		padding-inline: 0.5rem;
 		padding-block-end: 1rem;
 		display: flex;
-		justify-content: flex-start;
+		justify-content: center;
 		flex-wrap: wrap;
 	}
 	.act__wrapper {
@@ -83,6 +83,10 @@
 	#slider {
 		.act__wrapper {
 			padding-inline: 4rem;
+		}
+
+		.act_container {
+			justify-content: flex-start;
 		}
 		// #card_container {
 		// 	// display: flex;

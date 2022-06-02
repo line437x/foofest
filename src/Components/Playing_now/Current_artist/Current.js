@@ -1,13 +1,9 @@
-import Card from "../../Card/Card";
-import { useContext } from "react";
-import { BandsContext } from "../../../contexts/bandContext";
+import Act from "../../Schedule/Act";
 
-export default function CurrentArtist() {
-	const { bands } = useContext(BandsContext);
-	console.log(bands[0]);
+export default function CurrentArtist(props) {
 	return (
 		<div id="current_artist">
-			<Card className="card" {...bands[0]}></Card>
+			<Act {...props}></Act>
 		</div>
 	);
 }

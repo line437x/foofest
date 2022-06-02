@@ -1,13 +1,12 @@
-import Card from "../../Card/Card";
-import { useContext } from "react";
-import { BandsContext } from "../../../contexts/bandContext";
+import Act from "../../Schedule/Act";
 
-export default function NextArtist() {
-	const { bands } = useContext(BandsContext);
+export default function NextArtist(props) {
+	console.log(props);
 	return (
 		<div id="next_artist">
-			<Card className="card" {...bands[1]}></Card>
-			<Card className="card" {...bands[2]}></Card>
+			{props.playingNext.map((act) => {
+				return <Act act={act.act} start={act.start} end={act.end} />;
+			})}
 		</div>
 	);
 }
