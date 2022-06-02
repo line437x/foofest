@@ -17,13 +17,10 @@ export default function PlayingNow() {
 
 	function getPlayingNow(day, time) {
 		const daySchedule = sceneSchedule[day];
-		console.log(daySchedule);
 		daySchedule.map((act) => {
 			const actTimeStart = Number(act.start.substring(0, 2));
 			const actTimeEnd = Number(act.end.substring(0, 2));
-			console.log(time, actTimeStart);
-			if (actTimeStart === time && actTimeEnd === time + 2) {
-				console.log(act);
+			if ((actTimeStart === time && actTimeEnd === time + 2) || (actTimeStart === time - 1 && actTimeEnd === time + 1)) {
 				setPlayingNow(act);
 			}
 			return act;
@@ -31,7 +28,9 @@ export default function PlayingNow() {
 	}
 	function getPlayingNext(day) {
 		const daySchedule = sceneSchedule[day];
+		console.log(daySchedule);
 		const indexPlayingNow = daySchedule.indexOf(playingNow);
+		console.log(indexPlayingNow);
 		const playingNextArr = [daySchedule[indexPlayingNow + 1], daySchedule[indexPlayingNow + 2]];
 
 		setPlayingNext(playingNextArr);

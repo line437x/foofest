@@ -37,7 +37,7 @@
 	#playing_now {
 		.content_container {
 			display: grid;
-			grid-template-columns: 3fr 1fr;
+			grid-template-columns: 3fr auto;
 			.content {
 				display: flex;
 				justify-content: center;
