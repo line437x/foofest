@@ -2,7 +2,6 @@ import { useParams, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { BandsContext } from "../../contexts/bandContext";
-// import { ScheduleContext } from "../../contexts/scheduleContext";
 import Button from "../Buttons/Button";
 
 export default function SpecificArtist() {
@@ -10,7 +9,6 @@ export default function SpecificArtist() {
 	const { logos } = location.state;
 
 	const { bands } = useContext(BandsContext);
-	// const { schedule, setSchedule } = useContext(ScheduleContext);
 	const params = useParams();
 
 	const band = bands.filter((band) => {

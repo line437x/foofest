@@ -9,9 +9,6 @@
 		font-family: $display-font;
 	}
 	li {
-		// min-height: 4.5rem;
-		// max-height: 4.5rem;
-		// height: fit-content;
 		list-style: none;
 		background-color: $white;
 		display: flex;
@@ -20,7 +17,6 @@
 		h3 {
 			padding-inline: 2rem;
 			line-height: 2rem;
-			// font-size: $medium;
 		}
 
 		.pic1 {

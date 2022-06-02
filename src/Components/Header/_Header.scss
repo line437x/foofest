@@ -4,13 +4,9 @@
 	font-family: $display-font;
 	display: flex;
 	padding-inline: 1.5rem;
-	h1 {
-		align-self: center;
-	}
+	align-items: center;
 
 	p {
-		// font-family: $display-font;
-		align-self: flex-end;
 		width: 100%;
 		text-align: end;
 		max-width: none;

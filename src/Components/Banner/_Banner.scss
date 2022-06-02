@@ -3,7 +3,6 @@
 #banner {
 	border: 1px solid $black;
 	font-family: $display-font;
-	// font-size: 2rem;
 	text-transform: uppercase;
 }
 .marquee {
@@ -25,7 +24,6 @@
 .marquee span {
 	float: left;
 	width: 50%;
-	// font-size: 2.5rem;
 	font-size: $large;
 }
 
