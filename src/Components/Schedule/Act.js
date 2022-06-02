@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useContext, useRef } from "react";
 import { BandsContext } from "../../contexts/bandContext";
-import { act } from "react-dom/test-utils";
 
 export default function Act(props) {
 	const { bands } = useContext(BandsContext);
