@@ -11,9 +11,9 @@ export default function Lineup() {
 		<div id="lineup_container">
 			<Button></Button>
 			<div className="lineup">
-				{bands.map((m) => {
+				{bands.map((m, idx) => {
 					return (
-						<p key={uuidv4()}>
+						<p key={uuidv4()} className={idx === Math.floor(Math.random() * 126) ? "banana" : null}>
 							{m.name}
 							<span>&#183;</span>
 						</p>
