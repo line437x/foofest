@@ -6,6 +6,10 @@
 		justify-content: space-evenly;
 		list-style: none;
 		font-family: $display-font;
+		font-size: $medium;
+		:hover {
+			color: $blue;
+		}
 	}
 	border-bottom: 1px solid $black;
 }

@@ -6,9 +6,17 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
-	// margin: 1rem;
 	> * {
 		width: 50%;
 		border: 1px solid $black;
+	}
+}
+@media (min-width: 700px) {
+	#next_artist {
+		flex-direction: row;
+		> * {
+			width: 10rem;
+			font-size: $mix2;
+		}
 	}
 }

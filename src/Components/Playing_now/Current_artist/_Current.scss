@@ -9,7 +9,12 @@
 		width: 11rem;
 	}
 	h4 {
-		font-size: 1.5rem;
+		font-size: $mix2;
 		line-height: 1.5rem;
+	}
+}
+@media (min-width: 700px) {
+	#current_artist {
+		justify-content: flex-start;
 	}
 }
