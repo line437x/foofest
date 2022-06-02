@@ -2,10 +2,30 @@
 @use "./Current_artist/Current";
 @use "./Next_artist/Next";
 @use "./Sidebar/Sidebar";
+@use "../variables" as *;
 
 #playing_now {
+	article {
+		text-align: center;
+
+		h2 {
+			font-size: $large;
+			margin: 0;
+		}
+		p {
+			font-size: $tiny;
+			padding-inline: 1rem;
+			margin-block-end: 2.5rem;
+		}
+	}
 	.content {
-		margin: 1rem;
+		margin-inline: 1rem;
+		h2 {
+			font-size: $medium;
+		}
+		span {
+			color: $yellow;
+		}
 	}
 }
 @media (min-width: 700px) {

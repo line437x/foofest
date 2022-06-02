@@ -13,9 +13,18 @@ export default function PlayingNow() {
 			<Navigation></Navigation>
 			<Button></Button>
 			<div className="content_container">
+				<article>
+					<h2>{scene}</h2>
+					<p>
+						Browse the stages and we will make sure that you are always updated on now and whos next
+						up
+					</p>
+				</article>
 				<div className="content">
 					<div>
-						<h2>Playing now at {scene}</h2>
+						<h2>
+							Now playing at <span>{scene}</span>
+						</h2>
 						<Current></Current>
 					</div>
 					<div>

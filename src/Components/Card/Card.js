@@ -17,8 +17,11 @@ export default function Card(probs) {
 	return (
 		<div className="card">
 			<Link className="link" to={`/artist/${probs.id}`} state={{ logos: { logos } }}>
-				<h4>{probs.name}</h4>
-				<img src={logos} alt={probs.name} />
+				<div>
+					<h4>{probs.name}</h4>
+
+					<img src={logos} alt={probs.name} />
+				</div>
 				<p>Kl. {probs.start}</p>
 				<p>Mood: {probs.mood}</p>
 			</Link>
