@@ -20,7 +20,10 @@ export default function PlayingNow() {
 		daySchedule.map((act) => {
 			const actTimeStart = Number(act.start.substring(0, 2));
 			const actTimeEnd = Number(act.end.substring(0, 2));
-			if ((actTimeStart === time && actTimeEnd === time + 2) || (actTimeStart === time - 1 && actTimeEnd === time + 1)) {
+			if (
+				(actTimeStart === time && actTimeEnd === time + 2) ||
+				(actTimeStart === time - 1 && actTimeEnd === time + 1)
+			) {
 				setPlayingNow(act);
 			}
 			return act;
@@ -28,9 +31,7 @@ export default function PlayingNow() {
 	}
 	function getPlayingNext(day) {
 		const daySchedule = sceneSchedule[day];
-		console.log(daySchedule);
 		const indexPlayingNow = daySchedule.indexOf(playingNow);
-		console.log(indexPlayingNow);
 		const playingNextArr = [daySchedule[indexPlayingNow + 1], daySchedule[indexPlayingNow + 2]];
 
 		setPlayingNext(playingNextArr);
@@ -43,37 +44,30 @@ export default function PlayingNow() {
 			switch (today) {
 				case 1:
 					getPlayingNow("mon", time);
-					getPlayingNext("mon");
 
 					break;
 				case 2:
 					getPlayingNow("tue", time);
-					getPlayingNext("tue");
 
 					break;
 				case 3:
 					getPlayingNow("wed", time);
-					getPlayingNext("wed");
 
 					break;
 				case 4:
 					getPlayingNow("thu", time);
-					getPlayingNext("thu");
 
 					break;
 				case 5:
 					getPlayingNow("fri", time);
-					getPlayingNext("fri");
 
 					break;
 				case 6:
 					getPlayingNow("sat", time);
-					getPlayingNext("sat");
 
 					break;
 				case 7:
 					getPlayingNow("sun", time);
-					getPlayingNext("sun");
 
 					break;
 
@@ -87,6 +81,50 @@ export default function PlayingNow() {
 			setFirstMount(false);
 		}
 	}, [sceneSchedule, firstMount]);
+
+	useEffect(() => {
+		function getDaySchedule() {
+			const today = new Date().getDay();
+			switch (today) {
+				case 1:
+					getPlayingNext("mon");
+
+					break;
+				case 2:
+					getPlayingNext("tue");
+
+					break;
+				case 3:
+					getPlayingNext("wed");
+
+					break;
+				case 4:
+					getPlayingNext("thu");
+
+					break;
+				case 5:
+					getPlayingNext("fri");
+
+					break;
+				case 6:
+					getPlayingNext("sat");
+
+					break;
+				case 7:
+					getPlayingNext("sun");
+
+					break;
+
+				default:
+			}
+		}
+
+		if (!firstMount) {
+			getDaySchedule();
+		} else {
+			setFirstMount(false);
+		}
+	}, [playingNow]);
 
 	useEffect(() => {
 		function getSceneSchedule() {
@@ -105,7 +143,10 @@ export default function PlayingNow() {
 					<Button></Button>
 					<article>
 						<h2>{scene}</h2>
-						<p>Browse the stages and we will make sure that you are always updated on now and whos next up.</p>
+						<p>
+							Browse the stages and we will make sure that you are always updated on now and whos
+							next up.
+						</p>
 					</article>
 					<div className="content">
 						<div>

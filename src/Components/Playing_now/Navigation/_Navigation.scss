@@ -10,6 +10,9 @@
 		:hover {
 			color: $blue;
 		}
+		li {
+			cursor: pointer;
+		}
 	}
 	border-bottom: 1px solid $black;
 }

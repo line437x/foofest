@@ -1,11 +1,11 @@
 import Act from "../../Schedule/Act";
+import { v4 as uuidv4 } from "uuid";
 
 export default function NextArtist(props) {
-	console.log(props);
 	return (
 		<div id="next_artist">
 			{props.playingNext.map((act) => {
-				return <Act act={act.act} start={act.start} end={act.end} />;
+				return <Act key={uuidv4()} act={act.act} start={act.start} end={act.end} />;
 			})}
 		</div>
 	);
