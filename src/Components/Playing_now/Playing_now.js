@@ -32,7 +32,9 @@ export default function PlayingNow() {
 	function getPlayingNext(day) {
 		const daySchedule = sceneSchedule[day];
 		const indexPlayingNow = daySchedule.indexOf(playingNow);
+
 		const playingNextArr = [daySchedule[indexPlayingNow + 1], daySchedule[indexPlayingNow + 2]];
+		console.log(playingNextArr);
 
 		setPlayingNext(playingNextArr);
 	}
